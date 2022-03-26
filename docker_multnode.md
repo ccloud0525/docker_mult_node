@@ -43,7 +43,7 @@ $ ssh-keygen -t dsa -f /etc/ssh/ssh_host_ed25519_key -N ''
 #生成RSA随机图,修改 /etc/ssh/sshd_config 配置信息：
 #UsePAM yes 改为 UsePAM no 
 #UsePrivilegeSeparation sandbox 改为 UsePrivilegeSeparation no
-#具体执行如下：
+#具体执行如下所示：
 $ sed -i "s/#UsePrivilegeSeparation.*/UsePrivilegeSeparation no/g" /etc/ssh/sshd_config
 $ sed -i "s/UsePAM.*/UsePAM no/g" /etc/ssh/sshd_config
 #启动sshd
